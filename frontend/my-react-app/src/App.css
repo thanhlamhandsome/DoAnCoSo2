@@ -1,0 +1,11 @@
+/* Đặt font mặc định cho toàn bộ trang */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Định nghĩa font cho các phần tử sử dụng font 'Press Start 2P' */
+  .font-press-start {
+    font-family: 'Press Start 2P', sans-serif;
+  }
+  

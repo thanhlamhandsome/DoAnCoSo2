@@ -1,0 +1,126 @@
+/* General Styles */
+.transactionContainer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #D4EBF8; /* Màu xanh nhạt làm nền chính */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.transactionContainer h2 {
+  text-align: center;
+  color: #0A3981; /* Màu xanh đậm nhất */
+  font-size: 34px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid #1F509A; /* Màu xanh trung bình */
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Transaction List */
+.transactionList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+/* Transaction Item */
+.transactionItem {
+  background: #FFFFFF; /* Trắng nổi bật trên nền */
+  border: 1px solid #E38E49; /* Màu cam làm viền */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.transactionItem:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Header */
+.transactionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #1F509A; /* Màu xanh trung bình */
+  padding-bottom: 10px;
+}
+
+.transactionDate {
+  font-size: 16px;
+  color: #1F509A;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Transaction Details */
+.transactionDetails {
+  margin-top: 15px;
+}
+
+.transactionRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #0A3981; /* Màu xanh đậm */
+}
+
+.transactionRow strong {
+  font-weight: bold;
+  color: #1F509A; /* Xanh trung bình */
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #E38E49; /* Màu cam */
+}
+
+.status {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.status.success {
+  background-color: #1F509A; /* Xanh trung bình */
+  color: #FFFFFF;
+}
+
+.status.pending {
+  background-color: #E38E49; /* Màu cam */
+  color: #FFFFFF;
+}
+
+.status.failed {
+  background-color: #0A3981; /* Xanh đậm */
+  color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transactionContainer {
+    padding: 20px;
+  }
+
+  .transactionRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transactionRow span {
+    margin-top: 5px;
+  }
+}
